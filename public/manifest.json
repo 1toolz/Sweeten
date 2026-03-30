@@ -1,0 +1,21 @@
+{
+  "name": "حلي حياتك - Sweeten Your Life",
+  "short_name": "حلي حياتك",
+  "description": "أشهى الحلويات المخبوزة يومياً بحب",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF9F5",
+  "theme_color": "#D8A7B1",
+  "icons": [
+    {
+      "src": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/427791635_122110701860207237_612968014316171595_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_ohc=oZgWIBB9_t4Q7kNvwHkWe_s&_nc_oc=AdovNTfGFE7vDn_KW4_qBcnulwk-PdTChcm22kjb-i5wS3-pjfw3ZyB1f_NlJ5jKyYo&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=HED6rmsYTmGbZ5XPmVc1cw&_nc_ss=7a3a8&oh=00_AfyG5diyEh-rdKZ7jWekx8vKEotc0XTdznUSC8xY7Wt54g&oe=69CFBDBD",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/427791635_122110701860207237_612968014316171595_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_ohc=oZgWIBB9_t4Q7kNvwHkWe_s&_nc_oc=AdovNTfGFE7vDn_KW4_qBcnulwk-PdTChcm22kjb-i5wS3-pjfw3ZyB1f_NlJ5jKyYo&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=HED6rmsYTmGbZ5XPmVc1cw&_nc_ss=7a3a8&oh=00_AfyG5diyEh-rdKZ7jWekx8vKEotc0XTdznUSC8xY7Wt54g&oe=69CFBDBD",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
