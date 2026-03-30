@@ -334,7 +334,7 @@ export default function App() {
         initial={{ y: 0 }}
         animate={{ y: showNavbar ? 0 : -100 }}
         transition={{ duration: 0.3 }}
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-3xl shadow-[0_10px_40px_-10px_rgba(212,175,55,0.3)] py-2' : 'bg-white/80 backdrop-blur-xl border-b border-brand-gold/10 py-3 luxury-shadow'}`}
+        className={`sticky top-0 z-40 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-3xl shadow-[0_10px_40px_-10px_rgba(212,175,55,0.3)] py-2' : 'bg-white/80 backdrop-blur-xl border-b border-brand-gold/10 py-3 luxury-shadow'}`}
       >
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
           <div className="flex items-center gap-4 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
