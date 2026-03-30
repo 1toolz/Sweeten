@@ -303,105 +303,108 @@ export default function App() {
           )}
         </AnimatePresence>
 
-      {/* Top Upper Bar - Animated Marquee */}
-      <div className="bg-brand-kashmir text-white py-2.5 text-[10px] font-bold tracking-[0.2em] uppercase border-b border-white/10 relative z-50 overflow-hidden">
-        <div className="flex whitespace-nowrap animate-marquee items-center gap-12 w-max">
-          <span>✨ خصم 10% على جميع التورتات بمناسبة الافتتاح ✨</span>
-          <span className="flex items-center gap-2">
-            <Phone className="w-3 h-3" />
-            خدمة العملاء: 01098983079
-          </span>
-          <span className="flex items-center gap-2">
-            <MapPin className="w-3 h-3" />
-            كفر الشيخ، بلطيم، أمام السوق القطاعي
-          </span>
-          <span>🍰 أشهى الحلويات المخبوزة يومياً بحب 🍰</span>
-          <span>✨ خصم 10% على جميع التورتات بمناسبة الافتتاح ✨</span>
-          <span className="flex items-center gap-2">
-            <Phone className="w-3 h-3" />
-            خدمة العملاء: 01098983079
-          </span>
-          <span className="flex items-center gap-2">
-            <MapPin className="w-3 h-3" />
-            كفر الشيخ، بلطيم، أمام السوق القطاعي
-          </span>
-          <span>🍰 أشهى الحلويات المخبوزة يومياً بحب 🍰</span>
-        </div>
-      </div>
-
-      {/* Navbar */}
-      <motion.nav 
+      {/* Header Area */}
+      <motion.header 
         initial={{ y: 0 }}
-        animate={{ y: showNavbar ? 0 : -100 }}
-        transition={{ duration: 0.3 }}
-        className={`sticky top-0 z-40 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-3xl shadow-[0_10px_40px_-10px_rgba(212,175,55,0.3)] py-2' : 'bg-white/80 backdrop-blur-xl border-b border-brand-gold/10 py-3 luxury-shadow'}`}
+        animate={{ y: showNavbar ? 0 : -120 }}
+        transition={{ duration: 0.3, ease: "easeInOut" }}
+        className="sticky top-0 z-50 w-full"
       >
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
-          <div className="flex items-center gap-4 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <div className="relative w-14 h-14 md:w-16 md:h-16 flex items-center justify-center">
-              <div className="absolute inset-0 border-2 border-dashed border-brand-gold/40 rounded-full animate-[spin_10s_linear_infinite] group-hover:border-brand-kashmir transition-colors duration-500" />
-              <div className="absolute inset-1 bg-brand-gold/20 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-500" />
-              <img 
-                src="https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/427791635_122110701860207237_612968014316171595_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_ohc=oZgWIBB9_t4Q7kNvwHkWe_s&_nc_oc=AdovNTfGFE7vDn_KW4_qBcnulwk-PdTChcm22kjb-i5wS3-pjfw3ZyB1f_NlJ5jKyYo&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=HED6rmsYTmGbZ5XPmVc1cw&_nc_ss=7a3a8&oh=00_AfyG5diyEh-rdKZ7jWekx8vKEotc0XTdznUSC8xY7Wt54g&oe=69CFBDBD" 
-                alt="Sweeten Your Life Logo" 
-                className="w-12 h-12 md:w-14 md:h-14 object-contain rounded-full shadow-lg relative z-10 transform group-hover:scale-110 transition-transform duration-500"
-                referrerPolicy="no-referrer"
-              />
-            </div>
-            <div className="flex flex-col">
-              <h1 className="font-serif font-bold text-xl md:text-2xl leading-tight text-brand-brown tracking-wide group-hover:text-brand-gold transition-colors duration-300">حلي حياتك</h1>
-              <span className="text-[8px] md:text-[10px] text-brand-gold font-bold tracking-[0.2em] uppercase opacity-70">Sweeten Your Life</span>
-            </div>
-          </div>
-
-          <div className="flex items-center gap-2 md:gap-6">
-            <div className="hidden lg:flex items-center gap-8 ml-8 text-[10px] font-bold tracking-[0.2em] uppercase text-brand-brown/60">
-              <button className="hover:text-brand-gold transition-colors">الرئيسية</button>
-              <button className="hover:text-brand-gold transition-colors flex items-center gap-2">
-                من نحن
-                <span className="text-[7px] bg-brand-kashmir/20 text-brand-kashmir px-1.5 py-0.5 rounded-full border border-brand-kashmir/30">تحت التطوير</span>
-              </button>
-              <button className="hover:text-brand-gold transition-colors flex items-center gap-2">
-                الفروع
-                <span className="text-[7px] bg-brand-kashmir/20 text-brand-kashmir px-1.5 py-0.5 rounded-full border border-brand-kashmir/30">تحت التطوير</span>
-              </button>
-            </div>
-            
-            <div className="flex items-center gap-1 md:gap-4 bg-brand-beige/30 p-1 rounded-full border border-brand-gold/10">
-              <button 
-                onClick={() => setIsCategorySidebarOpen(true)}
-                className="flex flex-col items-center justify-center px-3 py-1 hover:bg-white rounded-full transition-all group"
-              >
-                <MenuIcon className="w-4 h-4 md:w-5 md:h-5 text-brand-gold group-hover:scale-110 transition-transform" />
-                <span className="text-[8px] md:text-[10px] font-bold text-brand-gold">الأقسام</span>
-              </button>
-              <button 
-                onClick={loadData}
-                disabled={loading}
-                className={`p-2 hover:bg-white rounded-full transition-all group ${loading ? 'animate-spin' : ''}`}
-                title="تحديث البيانات"
-              >
-                <Globe className={`w-4 h-4 md:w-5 md:h-5 text-brand-brown group-hover:text-brand-gold transition-colors ${loading ? 'opacity-50' : ''}`} />
-              </button>
-              <button className="p-2 hover:bg-white rounded-full transition-all group hidden md:block">
-                <User className="w-4 h-4 md:w-5 md:h-5 text-brand-brown group-hover:text-brand-gold transition-colors" />
-              </button>
-            </div>
-
-            <button 
-              onClick={() => setIsCartOpen(true)}
-              className="relative p-3 md:p-4 gold-gradient text-brand-brown rounded-full transition-all hover:shadow-2xl hover:scale-110 active:scale-95 group shadow-lg"
-            >
-              <ShoppingCart className="w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform" />
-              {cartCount > 0 && (
-                <span className="absolute -top-1 -right-1 bg-brand-pink text-brand-brown text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full border-2 border-white shadow-xl animate-bounce">
-                  {cartCount}
-                </span>
-              )}
-            </button>
+        {/* Top Upper Bar - Animated Marquee */}
+        <div className="bg-brand-kashmir text-white py-2 text-[9px] md:text-[10px] font-bold tracking-[0.1em] md:tracking-[0.2em] uppercase border-b border-white/10 overflow-hidden">
+          <div className="flex whitespace-nowrap animate-marquee items-center gap-8 md:gap-12 w-max">
+            <span>✨ خصم 10% على جميع التورتات بمناسبة الافتتاح ✨</span>
+            <span className="flex items-center gap-2">
+              <Phone className="w-3 h-3" />
+              خدمة العملاء: 01098983079
+            </span>
+            <span className="flex items-center gap-2">
+              <MapPin className="w-3 h-3" />
+              كفر الشيخ، بلطيم، أمام السوق القطاعي
+            </span>
+            <span>🍰 أشهى الحلويات المخبوزة يومياً بحب 🍰</span>
+            <span>✨ خصم 10% على جميع التورتات بمناسبة الافتتاح ✨</span>
+            <span className="flex items-center gap-2">
+              <Phone className="w-3 h-3" />
+              خدمة العملاء: 01098983079
+            </span>
+            <span className="flex items-center gap-2">
+              <MapPin className="w-3 h-3" />
+              كفر الشيخ، بلطيم، أمام السوق القطاعي
+            </span>
+            <span>🍰 أشهى الحلويات المخبوزة يومياً بحب 🍰</span>
           </div>
         </div>
-      </motion.nav>
+
+        {/* Navbar */}
+        <div className={`transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-3xl shadow-[0_10px_40px_-10px_rgba(212,175,55,0.3)] py-2' : 'bg-white/90 backdrop-blur-xl border-b border-brand-gold/10 py-3 luxury-shadow'}`}>
+          <div className="max-w-7xl mx-auto px-4 flex items-center justify-between">
+            <div className="flex items-center gap-3 md:gap-4 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <div className="relative w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                <div className="absolute inset-0 border-2 border-dashed border-brand-gold/40 rounded-full animate-[spin_10s_linear_infinite] group-hover:border-brand-kashmir transition-colors duration-500" />
+                <div className="absolute inset-1 bg-brand-gold/20 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-500" />
+                <img 
+                  src="https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/427791635_122110701860207237_612968014316171595_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_ohc=oZgWIBB9_t4Q7kNvwHkWe_s&_nc_oc=AdovNTfGFE7vDn_KW4_qBcnulwk-PdTChcm22kjb-i5wS3-pjfw3ZyB1f_NlJ5jKyYo&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=HED6rmsYTmGbZ5XPmVc1cw&_nc_ss=7a3a8&oh=00_AfyG5diyEh-rdKZ7jWekx8vKEotc0XTdznUSC8xY7Wt54g&oe=69CFBDBD" 
+                  alt="Sweeten Your Life Logo" 
+                  className="w-10 h-10 md:w-14 md:h-14 object-contain rounded-full shadow-lg relative z-10 transform group-hover:scale-110 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+              <div className="flex flex-col">
+                <h1 className="font-serif font-bold text-lg md:text-2xl leading-tight text-brand-brown tracking-wide group-hover:text-brand-gold transition-colors duration-300">حلي حياتك</h1>
+                <span className="text-[7px] md:text-[10px] text-brand-gold font-bold tracking-[0.1em] md:tracking-[0.2em] uppercase opacity-70">Sweeten Your Life</span>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-2 md:gap-6">
+              <div className="hidden lg:flex items-center gap-6 xl:gap-8 ml-4 xl:ml-8 text-[10px] font-bold tracking-[0.2em] uppercase text-brand-brown/60">
+                <button className="hover:text-brand-gold transition-colors">الرئيسية</button>
+                <button className="hover:text-brand-gold transition-colors flex items-center gap-2">
+                  من نحن
+                  <span className="text-[7px] bg-brand-kashmir/20 text-brand-kashmir px-1.5 py-0.5 rounded-full border border-brand-kashmir/30">تحت التطوير</span>
+                </button>
+                <button className="hover:text-brand-gold transition-colors flex items-center gap-2">
+                  الفروع
+                  <span className="text-[7px] bg-brand-kashmir/20 text-brand-kashmir px-1.5 py-0.5 rounded-full border border-brand-kashmir/30">تحت التطوير</span>
+                </button>
+              </div>
+              
+              <div className="flex items-center gap-1 md:gap-4 bg-brand-beige/30 p-1 rounded-full border border-brand-gold/10">
+                <button 
+                  onClick={() => setIsCategorySidebarOpen(true)}
+                  className="flex flex-col items-center justify-center px-2 md:px-3 py-1 hover:bg-white rounded-full transition-all group"
+                >
+                  <MenuIcon className="w-4 h-4 md:w-5 md:h-5 text-brand-gold group-hover:scale-110 transition-transform" />
+                  <span className="text-[7px] md:text-[10px] font-bold text-brand-gold">الأقسام</span>
+                </button>
+                <button 
+                  onClick={loadData}
+                  disabled={loading}
+                  className={`p-1.5 md:p-2 hover:bg-white rounded-full transition-all group ${loading ? 'animate-spin' : ''}`}
+                  title="تحديث البيانات"
+                >
+                  <Globe className={`w-4 h-4 md:w-5 md:h-5 text-brand-brown group-hover:text-brand-gold transition-colors ${loading ? 'opacity-50' : ''}`} />
+                </button>
+                <button className="p-1.5 md:p-2 hover:bg-white rounded-full transition-all group hidden md:block">
+                  <User className="w-4 h-4 md:w-5 md:h-5 text-brand-brown group-hover:text-brand-gold transition-colors" />
+                </button>
+              </div>
+
+              <button 
+                onClick={() => setIsCartOpen(true)}
+                className="relative p-2.5 md:p-4 gold-gradient text-brand-brown rounded-full transition-all hover:shadow-2xl hover:scale-110 active:scale-95 group shadow-lg"
+              >
+                <ShoppingCart className="w-4 h-4 md:w-5 md:h-5 group-hover:rotate-12 transition-transform" />
+                {cartCount > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-brand-pink text-brand-brown text-[9px] md:text-[10px] font-bold w-4 h-4 md:w-5 md:h-5 flex items-center justify-center rounded-full border-2 border-white shadow-xl animate-bounce">
+                    {cartCount}
+                  </span>
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </motion.header>
 
       {/* Hero Slider */}
       <div className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-brand-brown">
