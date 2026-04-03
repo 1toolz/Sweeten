@@ -7,7 +7,7 @@ import { fetchProductsFromSheet, MOCK_PRODUCTS } from './services/sheetService';
 const HERO_SLIDES = [
   { image: 'https://res.cloudinary.com/dw1k42gow/image/upload/v1775220696/cf6b40woantu6cijokvl.jpg', title: 'طعم السعادة في كل قطعة', subtitle: 'اكتشف تشكيلتنا الفاخرة من الحلويات المصنوعة بحب' },
   { image: 'https://res.cloudinary.com/dw1k42gow/image/upload/v1775220766/r2pstaxxcadwegyokvws.jpg', title: 'حلي أوقاتك الجميلة', subtitle: 'نخبز يومياً لنضمن لك الطعم الطازج والجودة العالية' },
-  { image: 'https://res.cloudinary.com/dw1k42gow/image/upload/v1774877025/bpbpn3y05wtt2lippgkg.jpg', title: 'لمسة من الفخامة', subtitle: 'حلويات تناسب جميع مناسباتك السعيدة' },
+  { image: 'https://res.cloudinary.com/dw1k42gow/image/upload/v1774874255/oh2vav0ivbhur7ozu3eb.jpg', title: 'لمسة من الفخامة', subtitle: 'حلويات تناسب جميع مناسباتك السعيدة' },
 ];
 
 export default function App() {
