@@ -53,8 +53,7 @@
       radial-gradient(at 100% 0%, rgba(216, 167, 177, 0.15) 0%, transparent 50%),
       radial-gradient(at 100% 100%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
       radial-gradient(at 0% 100%, rgba(216, 167, 177, 0.15) 0%, transparent 50%),
-      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='https://scontent.fcai20-1.fna.fbcdn.net/v/t39.30808-6/482248761_122217630116207237_7427504902435912105_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=GZKUVGVSY6UQ7kNvwGDqlqs&_nc_oc=AdoofYSfovDdgc_5H_dxURYglTSYEJWgMQYJeD4Jt8GfaQ0yzXTVYqh8FgCdZQmcIOM&_nc_zt=23&_nc_ht=scontent.fcai20-1.fna&_nc_gid=3Ox1brwI1-EVDd-bwNwvrw&_nc_ss=7a3a8&oh=00_Af04co99gwwA4aigkV2sEAm1e3nRmTkJ5xedg4KI0LvTwA&oe=69D5D119");
-    background-attachment: fixed;
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d8a7b1' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    background-attachment: fixed;
   }
 }
 
