@@ -344,7 +344,7 @@ export default function App() {
                 <div className="absolute inset-0 border-2 border-dashed border-brand-gold/40 rounded-full animate-[spin_10s_linear_infinite] group-hover:border-brand-kashmir transition-colors duration-500" />
                 <div className="absolute inset-1 bg-brand-gold/20 rounded-full blur opacity-0 group-hover:opacity-100 transition duration-500" />
                 <img 
-                  src="https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/427791635_122110701860207237_612968014316171595_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_ohc=oZgWIBB9_t4Q7kNvwHkWe_s&_nc_oc=AdovNTfGFE7vDn_KW4_qBcnulwk-PdTChcm22kjb-i5wS3-pjfw3ZyB1f_NlJ5jKyYo&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=HED6rmsYTmGbZ5XPmVc1cw&_nc_ss=7a3a8&oh=00_AfyG5diyEh-rdKZ7jWekx8vKEotc0XTdznUSC8xY7Wt54g&oe=69CFBDBD" 
+                  src="https://1toolz.sirv.com/1.jpg" 
                   alt="Sweeten Your Life Logo" 
                   className="w-10 h-10 md:w-14 md:h-14 object-contain rounded-full shadow-lg relative z-10 transform group-hover:scale-110 transition-transform duration-500"
                   referrerPolicy="no-referrer"
@@ -1176,7 +1176,7 @@ export default function App() {
                 <div className="relative w-20 h-20 flex items-center justify-center">
                   <div className="absolute inset-0 border-2 border-dashed border-brand-gold/40 rounded-full animate-[spin_10s_linear_infinite]" />
                   <img 
-                    src="https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-6/427791635_122110701860207237_612968014316171595_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=53a332&_nc_ohc=oZgWIBB9_t4Q7kNvwHkWe_s&_nc_oc=AdovNTfGFE7vDn_KW4_qBcnulwk-PdTChcm22kjb-i5wS3-pjfw3ZyB1f_NlJ5jKyYo&_nc_zt=23&_nc_ht=scontent.fcai20-2.fna&_nc_gid=HED6rmsYTmGbZ5XPmVc1cw&_nc_ss=7a3a8&oh=00_AfyG5diyEh-rdKZ7jWekx8vKEotc0XTdznUSC8xY7Wt54g&oe=69CFBDBD" 
+                    src="https://1toolz.sirv.com/1.jpg" 
                     alt="Sweeten Your Life Logo" 
                     loading="lazy"
                     className="w-16 h-16 object-contain rounded-full shadow-2xl border-2 border-brand-gold/20 relative z-10"
