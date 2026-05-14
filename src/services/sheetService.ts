@@ -166,7 +166,7 @@ export async function fetchProductsFromSheet(url: string): Promise<Product[]> {
 
 // Fallback mock data if sheet is not available or fails
 export const MOCK_PRODUCTS: Product[] = [
-  { id: 'test-1', name: 'تجريب', price: 45, image: 'https://1toolz.sirv.com/Images/780/1.png', category: 'مخبوزات', description: 'تجريبي', ingredients: 'دقيق، سكر، زبدة', calories: 200, size: 'صغير', options: 'بدون سكر' },
+  { id: 'test-1', name: 'تجريب', price: 45, image: 'https://picsum.photos/seed/croissant/400/400', category: 'مخبوزات', description: 'تجريبي', ingredients: 'دقيق، سكر، زبدة', calories: 200, size: 'صغير', options: 'بدون سكر' },
   { id: '1', name: 'كرواسون زبدة', price: 45, image: 'https://picsum.photos/seed/croissant/400/400', category: 'مخبوزات', description: 'كرواسون طازج', ingredients: 'دقيق، زبدة، حليب', calories: 250, size: 'متوسط' },
   { id: '2', name: 'كيكة الشوكولاتة', price: 350, image: 'https://picsum.photos/seed/cake/400/400', category: 'حلويات', description: 'كيكة غنية بالشوكولاتة', ingredients: 'دقيق، كاكاو، بيض، سكر', calories: 400, size: 'كبير' },
   { id: '3', name: 'تشيز كيك لوتس', price: 120, image: 'https://picsum.photos/seed/lotus/400/400', category: 'سبيشيال لوتس', description: 'تشيز كيك بصوص اللوتس', ingredients: 'جبن كريمي، بسكويت لوتس، زبدة', calories: 350, size: 'قطعة' },
